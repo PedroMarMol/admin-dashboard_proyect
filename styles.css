@@ -3,12 +3,13 @@
     padding: 0;
     max-height: 100vh;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 5fr;
     text-align: start;
 
 }
@@ -29,8 +30,23 @@
 
 .topbar {
     background-color: red;
-    display: grid;
+    display: flex;
     grid-column: 2 / 4;
+}
+
+.topbar p {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1; 
+    padding-right: 50px;
+}
+
+.topbar input {
+    background-color: lightgrey;
+    width: 50%;
+    border-radius: 30px;
+    margin: 2.7% 6%;
 }
 
 /* PART WITH USERNAME AND BUTTONS */
@@ -42,11 +58,28 @@
     grid-template-columns: 2fr 0.75fr;
 }
 
-.buttons {
-    align-self: center;
+.admin-info {
     display: flex;
-    justify-content: space-around;
-    max-width: 300px;
+    justify-content: center;
+    align-items: start;
+    margin-left: 50px;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+button {
+    background-color: lightblue;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: none;
+    /* background-image: url('');  */
 }
 
 /* TEXT PART */
@@ -66,16 +99,17 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
+    margin: 20px 0px 40px 20px;
 }
 
 .announcements {
     background-color: pink;
     grid-column: 2 / 3;
-    margin: 5%;
+    margin: 20px;
 }
 
 .trending {
     background-color:#FFF8DC;
     grid-column: 2 / 3;
-    margin: 5%;
+    margin: 20px 20px 40px 20px;
 }
