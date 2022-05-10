@@ -38,14 +38,14 @@
 .topbar p {
     display: flex;
     justify-content: end;
-    align-items: center;
-    flex-grow: 1; 
+    align-items: center; 
     padding-right: 50px;
+    min-width: 7em;
 }
 
 .topbar input {
     background-color: lightgrey;
-    width: 60%;
+    width: 90%;
     border-radius: 30px;
     margin: 2% 0;
 }
@@ -62,7 +62,7 @@
     height: 3em;
     border-radius: 50%;
     display: block;
-    margin: auto 2px auto 20em;
+    margin: auto 0.5em auto 10em;
 }
 /* USERNAME AND BUTTONS */
 
@@ -73,7 +73,7 @@
     grid-template-columns: 2fr 0.75fr;
 }
 
-.admin-info {
+.header-text-container {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -81,9 +81,22 @@
     flex-direction: column;
 }
 
+.admin-info {
+    display: flex;
+    margin: auto 1em auto 3em;
+}
+
+.greetings {
+
+}
+
+.header-text {
+
+}
+
 .bigger-profile-img {
-    width: 5.5em;
-    height: 5.5em;
+    width: 4.5em;
+    height: 4.5em;
     border-radius: 50%;
 }
 
@@ -91,7 +104,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 30px;
+    min-width: 20em;
 }
 
 button {
