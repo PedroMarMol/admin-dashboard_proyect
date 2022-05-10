@@ -58,10 +58,13 @@
 }
 
 .profile-img {
-    width: 3.5em;
-    height: 3.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: block;
+    margin: auto 2px auto 20em;
 }
-/* PART WITH USERNAME AND BUTTONS */
+/* USERNAME AND BUTTONS */
 
 .header {
     background-color: yellow;
@@ -76,6 +79,12 @@
     align-items: start;
     margin-left: 50px;
     flex-direction: column;
+}
+
+.bigger-profile-img {
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50%;
 }
 
 .buttons {
