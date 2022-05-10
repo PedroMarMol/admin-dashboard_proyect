@@ -17,7 +17,7 @@
 
 .sidebar {
     display: grid;
-    background-color: #34D399;
+    background-color: #8f9779;
     grid-row: 1 / 4;
     gap: 40px;
     color: white;
@@ -35,10 +35,12 @@
 }
 
 .topbar input {
-    background-color: #ECFDF5;
+    background-color: rgb(234, 234, 234);
     width: 90%;
+    height: 2.5em;
     border-radius: 30px;
     margin: 2% 0;
+    border: none;
 }
 
 .search-icon {
@@ -69,6 +71,7 @@
     align-items: center; 
     padding-right: 4.5em;
     min-width: 7em;
+    font-size: 1.1em;
 }
 
 /* USERNAME AND BUTTONS */
@@ -112,16 +115,16 @@
     align-items: center;
     justify-content: space-evenly;
     margin-right: 2em;
-    min-width: 10em;
+    min-width: 290px; /* prevents the div from shrinking*/
 }
 
 button {
-    background-color: #34D399;
+    background-color: #8f9779;
     color: white;
     border-radius: 30px;
     padding: 10px 30px;
     border: none;
-    /* background-image: url('');  */
+    font-size: 0.95em;
 }
 
 /* TEXT PART */
