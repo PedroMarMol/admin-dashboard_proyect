@@ -57,6 +57,13 @@
     margin: auto 1em auto 3em;
 }
 
+.alerts-icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    margin: auto -8em auto 5em; /* can be improved */
+}
+
 .profile-img {
     width: 3em;
     height: 3em;
@@ -67,7 +74,6 @@
 /* USERNAME AND BUTTONS */
 
 .header {
-    background-color: yellow;
     display: grid; 
     grid-column: 2 / 4;  
     grid-template-columns: 2fr 0.75fr;
@@ -83,7 +89,7 @@
 
 .admin-info {
     display: flex;
-    margin: auto 1em auto 3em;
+    margin: auto auto auto 3em;
 }
 
 .greetings {
@@ -98,13 +104,14 @@
     width: 4.5em;
     height: 4.5em;
     border-radius: 50%;
+    margin-right: -30px;
 }
 
 .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 20px;
     min-width: 20em;
 }
 
