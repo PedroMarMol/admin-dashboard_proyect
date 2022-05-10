@@ -81,7 +81,7 @@
     grid-column: 2 / 4;  
     grid-template-columns: 2fr 0.75fr;
     padding-bottom: 10px;
-    border-bottom: 1px solid black; /* add shadow */
+    box-shadow: 0 2em 0.5em rgb(199, 199, 199);
 }
 
 .header-text-container {
@@ -132,7 +132,8 @@ button {
 /* TEXT PART */
 
 .text-container {
-    background-color: lightgrey;
+    margin-top: 0.2em;
+    background-color: rgb(234, 234, 234);
     display: grid;
     grid-row: 3 / 4;
     grid-column: 2 / 4;
@@ -142,7 +143,6 @@ button {
 }
 
 .proj-div {
-    background-color: green;
     grid-row: 1 / 3;
     margin: 1em 0px 2em 1em;
     max-height: calc(100vh - 17em); 
@@ -155,17 +155,17 @@ button {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1em;
 }
 
 .projects-content {
     text-align: center; /* fixear a left */
-    border: 1px solid black;
     border-radius: 0.5em;
     background-color: white;
     border-left: 0.5em solid yellow; /* fixear color de paleta */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .ann-div {
@@ -180,10 +180,33 @@ button {
 }
 
 .announcements {
-    border: 1px solid black;
     padding: 1.2em 1.2em;
     background-color: white;
     border-radius: 0.5em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.ann-content1 {
+    padding-bottom: 1em;
+}
+
+.ann-content2 {
+    border-top: 1px solid rgb(97, 97, 97);
+    padding: 1em 0;
+}
+
+.ann-content3 {
+    border-top: 1px solid rgb(97, 97, 97);
+    padding-top: 1em;
+}
+
+.ann-text-title {
+    font-size: 0.85em;
+}
+
+.ann-text {
+    font-size: 0.7em;
+    color: rgb(97, 97, 97);
 }
 
 .trend-div {
@@ -200,7 +223,23 @@ button {
 
 .trending {
     background-color: white;
-    border: 1px solid black;
     border-radius: 0.5em;
-    max-height: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.trend1{ /* not sure if this works as wanted*/
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-left: 50px;
+    flex-direction: column;
+}
+
+.trend-user {
+    font-size: 0.85em;
+}
+
+.trend-text {
+    color: rgb(97, 97, 97);
+    font-size: 0.85em;
 }
