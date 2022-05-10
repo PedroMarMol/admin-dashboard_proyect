@@ -28,8 +28,9 @@
 .sidebar div {
 }
 
+/* TOP BAR */
+
 .topbar {
-    background-color: red;
     display: flex;
     grid-column: 2 / 4;
 }
@@ -44,11 +45,22 @@
 
 .topbar input {
     background-color: lightgrey;
-    width: 50%;
+    width: 60%;
     border-radius: 30px;
-    margin: 2.7% 6%;
+    margin: 2% 0;
 }
 
+.search-icon {
+    width: 1.2em;
+    height: 1.2em;
+    display: block;
+    margin: auto 1em auto 3em;
+}
+
+.profile-img {
+    width: 3.5em;
+    height: 3.5em;
+}
 /* PART WITH USERNAME AND BUTTONS */
 
 .header {
