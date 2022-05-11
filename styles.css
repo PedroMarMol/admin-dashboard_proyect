@@ -17,14 +17,37 @@
 
 .sidebar {
     display: grid;
-    background-color: #8f9779;
+    background-color: #97C4B8;
     grid-row: 1 / 4;
-    gap: 40px;
     color: white;
-    padding: 5%;
+    padding: 1.5em;
   }
 
-.sidebar div {
+.logo {
+    font-size: 1.5em;
+    max-height: 1.5em;
+}
+
+.logo img {
+    padding-right: 0.3em;
+}
+
+.sidebar-div {
+    margin-top: -15em;
+}
+
+.side-content {
+    font-size: 1.3em;
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.side-content img {
+    padding-right: 1em;
+}
+
+.help-menu {
+    margin-top: -15em;
 }
 
 /* TOP BAR */
@@ -35,7 +58,7 @@
 }
 
 .topbar input {
-    background-color: rgb(234, 234, 234);
+    background-color: #F9F3EE;
     width: 90%;
     height: 2.5em;
     border-radius: 30px;
@@ -81,7 +104,7 @@
     grid-column: 2 / 4;  
     grid-template-columns: 2fr 0.75fr;
     padding-bottom: 10px;
-    box-shadow: 0 2em 0.5em rgb(199, 199, 199);
+    box-shadow: 0 2em 0.5em #c2beb9;
 }
 
 .admin-info {
@@ -121,7 +144,7 @@
 }
 
 button {
-    background-color: #8f9779;
+    background-color: #97C4B8;
     color: white;
     border-radius: 30px;
     padding: 10px 30px;
@@ -132,8 +155,8 @@ button {
 /* TEXT PART */
 
 .text-container {
-    margin-top: 0.2em;
-    background-color: rgb(234, 234, 234);
+    margin-top: 0.5%;
+    background-color: #F9F3EE;
     display: grid;
     grid-row: 3 / 4;
     grid-column: 2 / 4;
@@ -144,13 +167,22 @@ button {
 
 .proj-div {
     grid-row: 1 / 3;
-    margin: 1em 0px 2em 1em;
+    margin: 1em 0 2em 1em;
     max-height: calc(100vh - 17em); 
 }
 
 .project-title {
     margin-bottom: 0.5em;
-    font-size: 1em;
+    font-size: 120%;
+}
+
+.projects-title {
+    font-size: 120%;
+}
+
+.projects-text {
+    font-size: 90%;
+    color: rgb(97, 97, 97);
 }
 
 .projects {
@@ -164,11 +196,25 @@ button {
     text-align: left;
     border-radius: 0.5em;
     background-color: white;
-    border-left: 0.5em solid yellow; /* fixear color de paleta */
+    border-left: 0.5em solid #F9CEEE;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    /* height: 13em;
-    width: 35em;
-    padding-top: 20px; */
+    padding: 1.7em 1.3em;
+    margin-bottom: 1em;
+    min-height: 30%;
+    max-height: 10em;
+}
+
+.projects-images {
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2em;
+}
+
+.projects-images img {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .ann-div {
@@ -178,7 +224,7 @@ button {
 
 .ann-title {
     margin-bottom: 0.5em;
-    font-size: 1em;
+    font-size: 120%;
 }
 
 .announcements {
@@ -193,12 +239,12 @@ button {
 }
 
 .ann-content2 {
-    border-top: 1px solid rgb(97, 97, 97);
+    border-top: 1px solid lightgrey;
     padding: 1em 0;
 }
 
 .ann-content3 {
-    border-top: 1px solid rgb(97, 97, 97);
+    border-top: 1px solid lightgrey;
     padding-top: 1em;
 }
 
@@ -219,7 +265,7 @@ button {
 
 .trend-title {
     padding-bottom: 0.5em;
-    font-size: 1em;
+    font-size: 120%;
 }
 
 .trending {
