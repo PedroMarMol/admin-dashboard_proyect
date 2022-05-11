@@ -172,7 +172,6 @@ button {
 }
 
 .ann-div {
-    background-color: pink;
     grid-column: 2 / 3;
     margin: 1em;
 }
@@ -183,7 +182,7 @@ button {
 }
 
 .announcements {
-    padding: 1.2em 1.2em;
+    padding: 2em 2em;
     background-color: white;
     border-radius: 0.5em;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -213,7 +212,6 @@ button {
 }
 
 .trend-div {
-    background-color:#FFF8DC;
     grid-column: 2 / 3;
     margin: 0 1em 2.5em 1em;
     max-height: 100%;
@@ -232,21 +230,20 @@ button {
 
 .trend{ 
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-start;
+    padding: 1em;
 }
 
-.trend-content1 {
+.trend-content {
     display: flex;
     flex-direction: column;
-    /* padding-right: 20em; */
 }
 
-/* #imgtest {
-    position: relative;
-    top: 2.5em;
-} */
+.trend-pfp {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 1em;
+}
 
 .trend-user {
     font-size: 0.85em;
