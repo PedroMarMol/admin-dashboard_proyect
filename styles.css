@@ -84,6 +84,18 @@
     box-shadow: 0 2em 0.5em rgb(199, 199, 199);
 }
 
+.admin-info {
+    display: flex;
+    margin: auto auto auto 3em;
+}
+
+.bigger-profile-img {
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    margin-right: -30px;
+}
+
 .header-text-container {
     display: flex;
     justify-content: center;
@@ -92,24 +104,12 @@
     flex-direction: column;
 }
 
-.admin-info {
-    display: flex;
-    margin: auto auto auto 3em;
-}
-
 .greetings {
     font-size: 0.9em;
 }
 
 .header-text {
     font-size: 1.6em;
-}
-
-.bigger-profile-img {
-    width: 4.5em;
-    height: 4.5em;
-    border-radius: 50%;
-    margin-right: -30px;
 }
 
 .buttons {
@@ -161,11 +161,14 @@ button {
 }
 
 .projects-content {
-    text-align: center; /* fixear a left */
+    text-align: left;
     border-radius: 0.5em;
     background-color: white;
     border-left: 0.5em solid yellow; /* fixear color de paleta */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* height: 13em;
+    width: 35em;
+    padding-top: 20px; */
 }
 
 .ann-div {
@@ -227,13 +230,23 @@ button {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.trend1{ /* not sure if this works as wanted*/
+.trend{ 
     display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-left: 50px;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
+.trend-content1 {
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 20em; */
+}
+
+/* #imgtest {
+    position: relative;
+    top: 2.5em;
+} */
 
 .trend-user {
     font-size: 0.85em;
